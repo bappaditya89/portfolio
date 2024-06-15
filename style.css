@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  max-width: 1220px;
+  margin: 0 auto;
+  height: 100vh;
+}
+body {
+  font-size: 16px;
+  background: black;
+  color: #dee2e6;
+}
+/* Header */
+header {
+  padding: 1.5rem 5rem;
+  background: #343a40;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+a {
+  text-decoration: none;
+  color: #dee2e6;
+  font-size: 1.2rem;
+}
+a:hover {
+  color: #40916c;
+  text-decoration: underline;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+/* Section */
+section {
+  padding: 8rem 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.content-left {
+  padding: 1.5rem 1rem;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+}
+.content-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+section h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+span {
+  color: #40916c;
+}
+section p {
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+}
+.cta {
+  padding: 0.8rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  max-width: 20rem;
+
+  cursor: pointer;
+  border: none;
+}
+.cta:hover {
+  color: #dee2e6;
+  background: #40916c;
+}
+img {
+  min-width: 300px;
+  height: auto;
+
+  border-radius: 50%;
+}
+/* Footer */
+footer {
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+footer p {
+  font-size: 1.5rem;
+}
+.company {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  text-align: center;
+}
+.company a {
+  border: 1px #dee2e6 solid;
+  background: #343a40;
+  border-radius: 0.5rem;
+  width: 9rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Media Queries  */
+@media (max-width: 1205px) {
+  .company {
+    gap: 1rem;
+  }
+}
+@media (max-width: 955px) {
+  .company a {
+    width: auto;
+    height: auto;
+    padding: 0.8rem;
+  }
+  section {
+    padding: 5rem 3rem;
+  }
+}
+@media (max-width: 797px) {
+  section {
+    padding: 2rem;
+  }
+  .content-left {
+    text-align: center;
+  }
+  .cta {
+    align-self: center;
+  }
+}
+@media (max-width: 755px) {
+  header {
+    padding: 1rem 2rem;
+  }
+  a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 650px) {
+  .company a {
+    flex-direction: column;
+    flex: 1;
+  }
+}
+
+@media (max-width: 580px) {
+  header {
+    padding: 1rem 0.9rem;
+  }
+}
+@media (max-width: 521px) {
+  section {
+    padding: 1rem;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 431px) {
+  section {
+    padding: 0.5rem;
+  }
+  section h1 {
+    font-size: 3rem;
+  }
+  section p {
+    font-size: 1rem;
+  }
+}
